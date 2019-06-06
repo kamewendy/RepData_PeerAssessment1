@@ -56,7 +56,7 @@ hist(total$steps, main = "Histogram for total number of steps taken per day",
      xlab = "steps", breaks=c(seq(0,23000,1000)))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](unnamed-chunk-3-1.png)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -94,7 +94,7 @@ plot(interval$interval,interval$steps, type = "l",
      col = "red")
 ```
 
-![](PA1_template_files/figure-html/calculation-1.png)<!-- -->
+![](calculation-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -224,7 +224,7 @@ hist(total$steps,
 legend("topright", c("Imputed", "Non-imputed"), col=c("violet", "wheat"), lwd=10)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](unnamed-chunk-7-1.png)<!-- -->
 
 Based on the graph above, we could see that the shape of two histograms are quite similar. However, the frequency of the number of steps (10000-11000) is higher (about 8 more) in imputed dataset than that in non-imputed dataset. 
 
@@ -290,4 +290,4 @@ library(lattice)
 xyplot(graph$steps ~ graph$interval|graph$which.day, main="Average number of steps taken across weekend and weekday",xlab="Interval", ylab="Steps",layout=c(1,2), type="l")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](https://github.com/kamewendy/RepData_PeerAssessment1/blob/master/unnamed-chunk-10-1.png?raw=true)<!-- -->
